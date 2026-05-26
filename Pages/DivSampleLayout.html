@@ -1,0 +1,88 @@
+<!-- Sample Layout using div elements -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Layout</title>
+    <link rel="stylesheet" href="publics/css/style.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .header {
+        background-color: #333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .nav {
+        background-color: #444;
+        padding: 0.5rem;
+        text-align: center;
+      }
+
+      .nav a {
+        color: white;
+        margin: 0 1rem;
+        text-decoration: none;
+      }
+
+      .nav a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        display: flex;
+        flex: 1;
+      }
+
+      .aside {
+        background-color: #f4f4f4;
+        padding: 1rem;
+        width: 250px;
+      }
+
+      .main {
+        flex: 1;
+        padding: 2rem;
+        background-color: #fff;
+      }
+
+      .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>My Website</h1>
+    </div>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="container">
+      <div class="aside">
+        <h2>Sidebar</h2>
+        <p>This is the sidebar content.</p>
+      </div>
+      <div class="main">
+        <h2>Main Content</h2>
+        <p>This is the main content area.</p>
+      </div>
+    </div>
+    <div class="footer">&copy; 2024 My Website</div>
+  </body>
+</html>
